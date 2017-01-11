@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( GoalTracking )
+find_package( OpenCV REQUIRED )
+add_executable( GoalTracking src/main.cpp )
+target_link_libraries( GoalTracking ${OpenCV_LIBS} )
